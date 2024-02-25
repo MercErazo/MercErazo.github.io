@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="authors" content="Mercelena Erazo-100884604 and Sebastian Romero-100886859">
+    <meta name="date-completed" content="February 24, 2024">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/app.css">
+
+</head>
+<body>
+<header></header>
+
+<h1>OUR LAST EVENTS</h1>
+<!-- Container for a gallery of event images -->
+<div class = "container-gallery">
+    <img src = "./images/event%20(1).jpg" alt="events" class = "zoom-img">
+    <img src = "./images/event%20(2).jpg" alt="events" class = "zoom-img">
+    <img src = "./images/event%20(3).jpg" alt="events" class = "zoom-img">
+    <img src = "./images/event%20(4).jpg" alt="events" class = "zoom-img">
+    <img src = "./images/event%20(5).jpg" alt="events" class = "zoom-img">
+    <img src = "./images/event%20(6).jpg" alt="events" class = "zoom-img">
+</div>
+<!-- <script>
+    // Open the Modal
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("myGallerySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+
+Images used to open the lightbox -->
+<!-- <div class="row">
+    <div class="column">
+        <img src="./images/img_nature.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="./images/img_snow.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="./images/img_lights.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="./images/img_mountains.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+</div>
+
+<!- The Modal/Lightbox -->
+<!-- <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content"> -->
+
+        <!-- <div class="myGallerySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/img_nature_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="myGallerySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="./images/img_snow_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="myGallerySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="./images/img_lights_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="myGallerySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="./images/img_mountains_wide.jpg" style="width:100%">
+        </div> -->
+
+        <!-- Next/previous controls -->
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+        <!-- Caption text -->
+        <!-- <div class="caption-container">
+            <p id="caption"></p>
+        </div> -->
+
+        <!-- Thumbnail image controls -->
+        <!-- <div class="column">
+            <img class="demo" src="./images/img_nature.jpg" onclick="currentSlide(1)" alt="Nature">
+        </div>
+
+        <div class="column">
+            <img class="demo" src="./images/img_snow.jpg" onclick="currentSlide(2)" alt="Snow">
+        </div>
+
+        <div class="column">
+            <img class="demo" src="./images/img_mountains.jpg" onclick="currentSlide(3)" alt="Mountains">
+        </div>
+
+        <div class="column">
+            <img class="demo" src="./images/img_lights.jpg" onclick="currentSlide(4)" alt="Lights">
+        </div>
+    </div>
+</div>
+
+<script> -->
+<!-- // Open the Modal
+function openModal() {
+document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+document.getElementById("myModal").style.display = "none";
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("myGallerySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script> -->
+
+<!-- Scripting Section -->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./scripts/namespace.js"></script>
+<script src="./scripts/user.js"></script>
+<script src="./scripts/app.js"></script>
+
+</body>
+</html>

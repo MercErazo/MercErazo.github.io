@@ -2,31 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Mercelena Erazo">
+    <meta name="authors" content="Mercelena Erazo-100884604 and Sebastian Romero-100886859">
+    <meta name="date-completed" content="February 24, 2024">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Our Services</title>
+    <title>Blog</title>
+
 
     <!-- CSS Section -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="content/app.css">
+    <link rel="stylesheet" href="./content/app.css">
+
+
 
 </head>
 <body>
 <header></header>
 
-<div class="container">
-    <h1>Service</h1>
+<!-- Random Dog Image Container -->
+<div id="container-dog">
+    <img id="dog-image"/>
+    <!-- Button to fetch and display a random dog image -->
+    <button id="dog-button" onclick="get_random_dog()"> Press here to be happy</button>
 </div>
 
+<!-- Upcoming Events Container -->
+<div id="events-container">
+    <!-- Heading for the upcoming events section -->
+    <h1>Upcoming Events</h1>
+    <!-- Unordered list to display a list of upcoming events -->
+    <ul id="events-list" events()> </ul>
+</div>
+
+
+<footer></footer>
 
 <!-- Scripting Section -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="scripts/namespace.js"></script>
 <script src="scripts/contact.js"></script>
 <script src="scripts/app.js"></script>
 

@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Mercelena Erazo">
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="authors" content="Mercelena Erazo-100884604 and Sebastian Romero-100886859">
+    <meta name="date-completed" content="February 24, 2024">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./content/app.css">
     <title>Home</title>
 
     <!-- CSS Section -->
@@ -19,16 +19,64 @@
 
 <header></header>
 
-<main class="container">
-    <h1>Welcome to our Website</h1>
-    <button id="AboutUsBtn" class="btn btn-primary">About Us</button>
+<main class="container mt-4">
+    <div class="container">
+        <h1>Welcome to Harmony Hub</h1>
+        <p>This is the place where you can come and feel welcomed. Whatever the season,
+            whatever the reason to gather with our community members and find a place
+            where you can develop yourself with others, as well as helping others.
+            We hope you enjoy being part of this community and this can help you achieve
+            your individual and collective goals.</p>
+    </div>
 </main>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number -->
+    <div class="mySlides fade">
+        <!-- Image 1 -->
+        <div class="numbertext">1 / 4</div>
+        <img src="./images/slide-1.jpg" alt="Background Image 1" style="width: 100%">
+    </div>
+    <div class="mySlides fade">
+        <!-- Image 2 -->
+        <div class="numbertext">2 / 4</div>
+        <img src="./images/slide-2.jpg" alt="Background Image 2" style="width: 100%">
+    </div>
+    <div class="mySlides fade">
+        <!-- Image 3 -->
+        <div class="numbertext">3 / 4</div>
+        <img src="./images/slide-3.jpg" alt="Background Image 3" style="width: 100%">
+    </div>
+    <div class="mySlides fade">
+        <!-- Image 4 -->
+        <div class="numbertext">4 / 4</div>
+        <img src="./images/slide-4.jpg" alt="Background Image 4" style="width: 100%">
+    </div>
+
+    <!-- Navigation dots -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <div id="quote-container">
+        <!-- API Information -->
+    </div>
+    <div id="weather-container">
+        <!-- Meteorologic Information -->
+    </div>
+</div>
+
+<footer></footer>
 
 <!-- Scripting Section -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="scripts/namespace.js"></script>
 <script src="scripts/contact.js"></script>
 <script src="scripts/app.js"></script>
+
 </body>
 </html>

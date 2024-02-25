@@ -1,0 +1,17 @@
+{
+    "events": [
+        {
+            "title": "Dog Adoption Event",
+            "date": "2024-03-20",
+            "location": "Local Animal Shelter",
+            "description": "Come and find your new furry friend at our dog adoption event! We have dogs of all breeds, sizes, and ages looking for loving families to adopt them. Whether you're looking for a playful puppy or a wise senior dog, we have the perfect match for you. Join us in making a difference in these dogs' lives and giving them a forever home. Your new best friend is waiting for you!"
+        },
+        {
+            "title": "Family Night Dance",
+            "date": "2024-03-25",
+            "location": "Community Hall",
+            "description": "Join us for a night of family-friendly dancing! Everyone is welcome to participate. The event will feature lively music, dance instructors to guide you through the steps, and a joyful atmosphere for all ages. The entry fee is $5 Canadian dollars, and all proceeds will go towards helping refugees in Ukraine. This is not just a dance; it's a meaningful opportunity to come together as a community and make a positive impact on the lives of those in need. Let's dance for a cause!"
+        }
+
+    ]
+}

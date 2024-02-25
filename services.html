@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="authors" content="Mercelena Erazo-100884604 and Sebastian Romero-100886859">
+    <meta name="date-completed" content="February 24, 2024">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./content/app.css">
+    <title>Our Services</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/app.css">
+
+</head>
+<body>
+<header></header>
+
+<main class="container mt-4"> <!-- Add margin-top to create space between menu and images -->
+    <h1>Our Services</h1>
+    <!-- Service content -->
+    <div class="accordion">
+        <!-- Service 1 -->
+        <div class="accordion-item">
+            <div class="accordion-button" onclick="toggleAccordion('service1')">
+                <i class="fa-regular fa-comments"></i>
+                <h2> Conversational French Classes</h2>
+            </div>
+            <div id="service1" class="accordion-content">
+                <p>We have a variety of schedules and lessons with small groups, so you can gain confidence.</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum."</p>
+            </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="accordion-item">
+            <div class="accordion-button" onclick="toggleAccordion('service2')">
+                <i class="fa-solid fa-computer"></i>
+                <h2> Programming Lessons</h2>
+            </div>
+            <div id="service2" class="accordion-content">
+                <p>Develop your coding skills with a group of tech-enthusiastic just like you.</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum."</p>
+            </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="accordion-item">
+            <div class="accordion-button" onclick="toggleAccordion('service3')">
+                <i class="fa-solid fa-palette"></i>
+                <h2> Crafting</h2>
+            </div>
+            <div id="service3" class="accordion-content">
+                <p>From crochet to drawing and lettering, we have different options so you can develop your artistic self.</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum."</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer id="footer" class="clearfix">
+    <nav class="navbar">
+        <div class="text-center">
+            <ul><p class="footer__copyright">&copy; 2024</p></ul>
+            <ul><a href="./privacypolicy.html" class="footer-link">Privacy Policy</a></ul>
+            <ul><a href="./termsofservice.html" class="footer-link">Terms of Service</a></ul>
+            <ul><a href="contactus.html" class="footer-link">Contact Us</a></ul>
+        </div>
+        <div class="contact-info">
+            <p>Get in touch:</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Address: 123 Main Street, Toronto, ON, Canada</p>
+        </div>
+    </nav>
+</footer>
+
+<!-- Scripting Section -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/contact.js"></script>
+<script src="scripts/app.js"></script>
+
+</body>
+</html>
